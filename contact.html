@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Godfather Fashion</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+</head>
+
+<body>
+    <header id="header">
+        <a href="#">
+            <img src="img/logo.png" alt="logo" class="logo">
+        </a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <section id="page-header" class="about-header">
+        <h2>#Let's_talk</h2>
+        <p>LEAVE A MESSAGE, We Love to hear from you!</p>
+    </section>
+
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+            <h2>Visit one of our agency location or contact us today</h2>
+            <h3>Head office</h3>
+            <div>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>56 Glassford Stret Glasgow G1 1UL New York</p>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>pativalaaxay@gmail.com</p>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+91 8866481830</p>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    <p>Monday to Saturday: 9.00am To 16.00pm </p>
+                </li>
+            </div>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235014.29918790408!2d72.41493012913728!3d23.020158084541738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1729258213190!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section id="form_details">
+
+        <form action="" onsubmit="formValidation(event)">
+            <span>LEAVE A MESSAGE</span>
+            <h2 class="heading">Contact Form</h2>
+            <input type="text" name="" id="fname" placeholder="please enter your name">
+            <p id="fnameError"></p>
+
+            <input type="text" name="" id="email" placeholder="please enter your email">
+            <p id="emailError"></p>
+
+            <input type="text" name="" id="number" placeholder="please enter your number">
+            <p id="numberError"></p>
+
+            <input type="text" name="" id="password" placeholder="please enter your password">
+            <p></p>
+            
+            <input type="text" name="" id="password_confirmation" placeholder="please enter your confirm password">
+            <p id="passwordError"></p>
+
+            <span id="successMessage"></span>
+            <input type="submit" name="" id="" class="normal-submit">
+
+        </form>
+        <div class="people">
+            <div>
+                <img src="img/people/1.png" alt="">
+                <p><span>John Doe</span> Senior Marketing Manager <br> Phone: + 000 123 Bstylecat 9293000 77 88
+                    <br>Email: contact@example.com
+                </p>
+            </div>
+
+            <div>
+                <img src="img/people/2.png" alt="">
+                <p><span>William Smith</span> Senior Marketing Manager <br> Phone: + 000 123 Bstylecat 9293000 77 88
+                    <br>Email: contact@example.com
+                </p>
+            </div>
+
+            <div>
+                <img src="img/people/3.png" alt="">
+                <p><span>Emma Stone</span> Senior Marketing Manager <br> Phone: + 000 123 Bstylecat 9293000 77 88
+                    <br>Email: contact@example.com
+                </p>
+            </div>
+        </div>
+        <!-- <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(247, 80, 100);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .main {
+            width: 50%;
+            height: auto;
+            /* height: 500px; */
+            background-color: rgb(77, 26, 77);
+        }
+
+        .heading {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        input {
+            background-color: transparent;
+            border: none;
+            display: block;
+            border-bottom: 2px solid white;
+            width: 80%;
+            margin: 30px auto;
+            color: white;
+        }
+
+        input::placeholder {
+            color: white;
+        }
+
+        .submit {
+            background-color: rgb(247, 80, 108);
+            color: white;
+            width: 20%;
+            border: none;
+            padding: 15px;
+            margin: 30px auto;
+            border-radius: 50px;
+        }
+
+        #successMessage {
+            color: green;
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        p {
+            color: red;
+            padding: 0;
+            margin: 0 auto;
+            width: 80%;
+        }
+    </style> -->
+
+
+
+
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up Newsletter</h4>
+            <p>Get E-mail Update about our latest shop and <span> special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" name="" id="" placeholder="Your Email Address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1 ">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 562 Wellington Road, Street 32, Son Francico</p>
+            <p><strong>Phone:</strong> +91 8866481830</p>
+            <p><strong>Hours:</strong>10:00 - 18:00, Mon - Sat </p>
+            <div class="follow">
+                <h4>follow US</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About US</a>
+            <a href="#">Delivery information</a>
+            <a href="#">Privacy & Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Healp</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store Or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secure Payment Gateway</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>©2021, The Fashion Hub</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
